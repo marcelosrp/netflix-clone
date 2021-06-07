@@ -1,12 +1,12 @@
 import React from 'react'
 import Header from '../../components/Header'
 import Destaque from '../../components/Destaque'
+import Assinatura from '../../components/Assinatura'
 import Features from '../../components/Features'
 import Accordion from '../../components/Accordion'
 import TabAccordion from '../../components/Accordion/tab'
 
 import Heading from '../../components/Typography/heading'
-import Texting from '../../components/Typography/texting'
 
 import features from '../../data/features.json'
 import faq from '../../data/faq.json'
@@ -41,10 +41,7 @@ const HomeTemplate = () => (
       <Heading level="2" color="secondary" size="large" fontWeight="400">
         Assista onde quiser. Cancele quando quiser.
       </Heading>
-      <Texting color="secondary" size="large">
-        Pronto para assistir? Informe seu email para criar ou reiniciar sua
-        assinaura.
-      </Texting>
+      <Assinatura />
     </Destaque>
     {getFeatures()}
     <S.FaqWrapper>
@@ -53,6 +50,8 @@ const HomeTemplate = () => (
       </Heading>
 
       <Accordion>{getFaqQuestions()}</Accordion>
+
+      <Assinatura />
     </S.FaqWrapper>
   </S.MainHome>
 )

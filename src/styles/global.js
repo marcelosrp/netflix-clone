@@ -4,6 +4,7 @@ const GlobalStyles = createGlobalStyle`
   :root {
     --container: 100rem;
 
+    --small: 1.6rem;
     --normal: 1.9rem;
     --large: 2.5rem;
     --xlarge: 5re;
