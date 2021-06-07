@@ -1,6 +1,8 @@
 import React from 'react'
 import { NextSeo } from 'next-seo'
 
+import HomeTemplate from '../templates/Home'
+
 const Home = () => {
   return (
     <>
@@ -24,7 +26,7 @@ const Home = () => {
           site_name: 'My Trips'
         }}
       />
-      <h1>Home</h1>
+      <HomeTemplate />
     </>
   )
 }

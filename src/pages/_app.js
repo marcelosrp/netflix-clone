@@ -16,6 +16,11 @@ const App = ({ Component, pageProps }) => {
         <link rel="shortcut icon" href="/img/icon-512.png" />
         <link rel="apple-touch-icon" href="/img/icon-512.png" />
         <meta name="theme-color" content="#06092B" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <DefaultSeo {...SEO} />
       <GlobalStyles />
