@@ -4,9 +4,13 @@ export const FaqTabs = styled.div`
   margin: 5rem auto 0 auto;
   overflow: hidden;
   width: var(--container);
+
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 `
 export const FaqTab = styled.div`
-  color: white;
+  color: var(--branco);
   margin-bottom: 1rem;
   overflow: hidden;
   width: 100%;
@@ -23,6 +27,11 @@ export const FaqTabLabel = styled.label`
   svg {
     transition: transform 0.3s ease;
   }
+
+  @media (max-width: 700px) {
+    font-size: var(--small);
+    padding: 1rem;
+  }
 `
 export const FaqTabContent = styled.div`
   color: var(--branco);
@@ -31,6 +40,11 @@ export const FaqTabContent = styled.div`
   max-height: 0;
   padding: 0 3rem;
   transition: all 0.35s;
+
+  @media (max-width: 700px) {
+    font-size: var(--small);
+    padding: 0 1rem;
+  }
 `
 export const FaqInput = styled.input`
   position: absolute;
@@ -48,6 +62,10 @@ export const FaqInput = styled.input`
       margin-top: 0.1rem;
       max-height: 100vh;
       padding: 3rem;
+
+      @media (max-width: 700px) {
+        padding: 1rem;
+      }
     }
   }
 `

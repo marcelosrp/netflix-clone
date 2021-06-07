@@ -30,6 +30,11 @@ const Texting = styled('p')`
     margin: ${margin};
     text-align: ${textAlign};
     text-transform: ${textTransform};
+
+    @media (max-width: 700px) {
+      font-size: var(--small);
+      line-height: 22px;
+    }
   `}
 `
 

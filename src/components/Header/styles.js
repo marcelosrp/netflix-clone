@@ -8,6 +8,10 @@ export const HeaderWrapper = styled.header`
   top: 0;
   width: 100%;
   z-index: 2;
+
+  @media (max-width: 700px) {
+    padding: 2rem;
+  }
 `
 
 export const HeaderItem = styled.div``

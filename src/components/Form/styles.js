@@ -5,10 +5,19 @@ export const Form = styled.form`
   display: flex;
   justify-content: center;
   margin-top: 1rem;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
 `
 
 export const InputWrapper = styled.div`
   position: relative;
+
+  @media (max-width: 700px) {
+    padding: 0 2rem;
+    width: 100%;
+  }
 `
 
 export const InputLabel = styled.label`
@@ -44,6 +53,10 @@ export const Input = styled.input`
     font-size: var(--small);
     padding: 2rem 1rem;
     width: 45rem;
+
+    @media (max-width: 700px) {
+      width: 100%;
+    }
   }
 
   &:focus,

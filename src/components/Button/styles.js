@@ -11,4 +11,10 @@ export const Button = styled.button`
   font-weight: 400;
   padding: 1.5rem 2.5rem;
   text-decoration: none;
+
+  @media (max-width: 700px) {
+    font-size: var(--small);
+    margin: 1rem auto;
+    padding: 1rem;
+  }
 `

@@ -8,6 +8,21 @@ export const FeatureWrapper = styled.section`
   justify-content: center;
   padding: 5rem;
   width: 100%;
+
+  @media (max-width: 700px) {
+    padding: 2.5rem;
+    flex-direction: column;
+
+    h1,
+    p {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      line-height: 30px;
+    }
+  }
 `
 
 export const FeatureItem = styled.div`
@@ -16,9 +31,18 @@ export const FeatureItem = styled.div`
 
   &.texto {
     width: 56rem;
+
+    @media (max-width: 700px) {
+      width: 100%;
+    }
   }
 `
 
 export const FeatureImg = styled.img`
   width: 50rem;
+
+  @media (max-width: 700px) {
+    max-width: 100%;
+    width: 100%;
+  }
 `
