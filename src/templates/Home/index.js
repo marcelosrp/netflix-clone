@@ -2,11 +2,14 @@ import React from 'react'
 import Header from '../../components/Header'
 import Destaque from '../../components/Destaque'
 import Features from '../../components/Features'
+import Accordion from '../../components/Accordion'
+import TabAccordion from '../../components/Accordion/tab'
 
 import Heading from '../../components/Typography/heading'
 import Texting from '../../components/Typography/texting'
 
 import features from '../../data/features.json'
+import faq from '../../data/faq.json'
 
 import * as S from './styles'
 
@@ -19,6 +22,12 @@ function getFeatures() {
       imagem={imagem}
       isFliped={isFliped}
     />
+  ))
+}
+
+function getFaqQuestions() {
+  return faq.map(({ pergunta, resposta }) => (
+    <TabAccordion key={pergunta} pergunta={pergunta} resposta={resposta} />
   ))
 }
 
@@ -38,6 +47,13 @@ const HomeTemplate = () => (
       </Texting>
     </Destaque>
     {getFeatures()}
+    <S.FaqWrapper>
+      <Heading level="1" color="secondary" size="xlarge">
+        Perguntas frequentes
+      </Heading>
+
+      <Accordion>{getFaqQuestions()}</Accordion>
+    </S.FaqWrapper>
   </S.MainHome>
 )
 

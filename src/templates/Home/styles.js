@@ -5,3 +5,8 @@ export const MainHome = styled.main`
   position: relative;
   width: 100%;
 `
+export const FaqWrapper = styled.section`
+  border-top: 8px solid var(--cinza);
+  padding: 5rem 2rem;
+  width: 100%;
+`
