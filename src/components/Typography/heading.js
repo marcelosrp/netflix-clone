@@ -20,14 +20,16 @@ const Heading = styled('h1').attrs(({ level }) => ({
     color = 'primary',
     fontWeight = '600',
     lineHeight = '55px',
+    margin = '0',
     textAlign = 'center',
-    textTransform = 'normal',
+    textTransform = 'none',
     size = 'large'
   }) => css`
     color: ${theme.colors[color]};
     font-size: ${theme.sizes[size]};
     font-weight: ${fontWeight};
     line-height: ${lineHeight};
+    margin: ${margin};
     text-align: ${textAlign};
     text-transform: ${textTransform};
   `}

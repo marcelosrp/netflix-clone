@@ -3,7 +3,7 @@ export default {
     type: 'website',
     locale: 'en_US',
     url: 'https://www.meusite.com.br',
-    site_name: 'Template'
+    site_name: 'Netflix Clone'
   },
   twitter: {
     handle: '@username',

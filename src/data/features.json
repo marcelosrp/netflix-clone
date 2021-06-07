@@ -1,0 +1,26 @@
+[
+  {
+    "titulo": "Aproveite na TV.",
+    "texto": "Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.",
+    "imagem": "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png",
+    "isFliped": false
+  },
+  {
+    "titulo": "Baixe séries para assistir offline.",
+    "texto": "Salve seus títulos favoritos e sempre tenha algo para assistir.",
+    "imagem": "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg",
+    "isFliped": true
+  },
+  {
+    "titulo": "Assista quando quiser.",
+    "texto": "Assista no celular, tablet, Smart TV ou notebook sem pagar a mais por isso.",
+    "imagem": "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png",
+    "isFliped": false
+  },
+  {
+    "titulo": "Crie perfis para crianças.",
+    "texto": "Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito só para elas, sem pagar a mais por isso",
+    "imagem": "https://occ-0-596-1123.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABUb4fcnETtielPJer_ORwZ2iUanycANl37cr81zDaXC9Fmg9c42ofxt0yxetNltG2xUMgf2Aqimz_q1Nsv-38Ng_EjIc.png?r=1b8",
+    "isFliped": true
+  }
+]

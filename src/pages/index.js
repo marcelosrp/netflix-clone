@@ -7,23 +7,22 @@ const Home = () => {
   return (
     <>
       <NextSeo
-        title="Template"
-        description="A simple nextjs template to start a new project from scratch"
+        title="Netflix Clone"
+        description="Netflix clone in Nextjs"
         canonical="https://meusite.com.br/"
         openGraph={{
           url: 'https://meusite.com.br/',
           title: 'Template',
-          description:
-            'A simple nextjs template to start a new project from scratch',
+          description: 'Netflix clone in Nextjs',
           images: [
             {
               url: 'https://meusite.com.br/img/cover.png',
               width: 1280,
               height: 720,
-              alt: 'My Trips'
+              alt: 'Netflix Clone'
             }
           ],
-          site_name: 'My Trips'
+          site_name: 'Netflix Clone'
         }}
       />
       <HomeTemplate />
