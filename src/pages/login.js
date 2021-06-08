@@ -1,13 +1,13 @@
 import React from 'react'
 import { NextSeo } from 'next-seo'
 
-import HomeTemplate from '../templates/Home'
+import LoginTemplate from '../templates/Login'
 
 const Home = () => {
   return (
     <>
       <NextSeo
-        title="Netflix Clone"
+        title="Netflix Clone - Login"
         description="Netflix clone in Nextjs"
         canonical="https://meusite.com.br/"
         openGraph={{
@@ -25,7 +25,7 @@ const Home = () => {
           site_name: 'Netflix Clone'
         }}
       />
-      <HomeTemplate />
+      <LoginTemplate />
     </>
   )
 }
