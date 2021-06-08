@@ -1,10 +1,11 @@
 import React from 'react'
 import Header from '../../components/Header'
-import Destaque from '../../components/Destaque'
+import Hero from '../../components/Hero'
 import Assinatura from '../../components/Assinatura'
 import Features from '../../components/Features'
 import Accordion from '../../components/Accordion'
 import TabAccordion from '../../components/Accordion/tab'
+import Footer from '../../components/Footer'
 
 import Heading from '../../components/Typography/heading'
 
@@ -34,7 +35,7 @@ function getFaqQuestions() {
 const HomeTemplate = () => (
   <S.MainHome>
     <Header />
-    <Destaque>
+    <Hero>
       <Heading level="1" color="secondary" size="xlarge">
         Filmes, séries e muito mais. <br /> Sem limites.
       </Heading>
@@ -42,17 +43,16 @@ const HomeTemplate = () => (
         Assista onde quiser. Cancele quando quiser.
       </Heading>
       <Assinatura />
-    </Destaque>
+    </Hero>
     {getFeatures()}
     <S.FaqWrapper>
       <Heading level="1" color="secondary" size="xlarge">
         Perguntas frequentes
       </Heading>
-
       <Accordion>{getFaqQuestions()}</Accordion>
-
       <Assinatura />
     </S.FaqWrapper>
+    <Footer />
   </S.MainHome>
 )
 

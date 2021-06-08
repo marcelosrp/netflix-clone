@@ -4,7 +4,9 @@ const theme = {
   colors: {
     primary: 'var(--primary-color)',
     secondary: 'var(--branco)',
-    thirdy: 'var(--preto)'
+    thirdy: 'var(--preto)',
+    cinza: 'var(--cinza)',
+    cinza2: 'var(--cinza2)'
   },
   sizes: {
     normal: '1.9rem',
