@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Header from '../../components/Header'
 import Heading from '../../components/Typography/heading'
 import Profile from '../../components/Profile'
+import { GlobalContext } from '../../context/globalContext'
 
 import profiles from '../../data/profiles.json'
 
@@ -13,21 +14,42 @@ function getProfiles() {
   ))
 }
 
-const BrowseTemplate = () => (
-  <>
-    <Header />
+const BrowseTemplate = () => {
+  const { profileClicked } = useContext(GlobalContext)
+  const [hasProfileSelected, setHasProfileSelected] = useState(false)
 
-    <S.MainProfile>
-      <Heading level="1" color="secondary" size="xlarge">
-        Quem está assistindo?
-      </Heading>
+  useEffect(() => {
+    if (localStorage.getItem('profileSelected')) setHasProfileSelected(true)
+  }, [])
 
-      <S.ChoosePerfil>
-        {getProfiles()}
-        <Profile name="Infantil" className="infantil" />
-      </S.ChoosePerfil>
-    </S.MainProfile>
-  </>
-)
+  function showProfileOrFeed() {
+    if (profileClicked || hasProfileSelected) {
+      return (
+        <Heading level="1" color="secondary">
+          Meu Feed
+        </Heading>
+      )
+    } else {
+      return (
+        <>
+          <Heading level="1" color="secondary" size="xlarge">
+            Quem está assistindo?
+          </Heading>
+          <S.ChoosePerfil>
+            {getProfiles()}
+            <Profile name="Infantil" className="infantil" />
+          </S.ChoosePerfil>
+        </>
+      )
+    }
+  }
+
+  return (
+    <>
+      <Header />
+      <S.MainProfile>{showProfileOrFeed()}</S.MainProfile>
+    </>
+  )
+}
 
 export default BrowseTemplate

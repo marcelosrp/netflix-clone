@@ -13,6 +13,7 @@ export const GlobalStorage = ({ children }) => {
     }
 
     localStorage.setItem('profile', JSON.stringify(ProfileInfo))
+    localStorage.setItem('profileSelected', true)
     setProfileClicked(!profileClicked)
   }
 
