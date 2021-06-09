@@ -1,13 +1,13 @@
 import React from 'react'
 import { NextSeo } from 'next-seo'
 
-import LoginTemplate from '../templates/Login'
+import BrowseTemplate from '../templates/Browse'
 
-const Login = () => {
+const Browse = () => {
   return (
     <>
       <NextSeo
-        title="Netflix Clone - Login"
+        title="Netflix Clone"
         description="Netflix clone in Nextjs"
         canonical="https://meusite.com.br/"
         openGraph={{
@@ -25,9 +25,9 @@ const Login = () => {
           site_name: 'Netflix Clone'
         }}
       />
-      <LoginTemplate />
+      <BrowseTemplate />
     </>
   )
 }
 
-export default Login
+export default Browse
