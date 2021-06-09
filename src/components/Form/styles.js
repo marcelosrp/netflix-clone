@@ -12,6 +12,10 @@ export const Form = styled.form`
 
   &.assinatura {
     flex-direction: row;
+
+    @media (max-width: 700px) {
+      padding: 0 2rem;
+    }
   }
 
   &.login {
@@ -23,7 +27,6 @@ export const InputWrapper = styled.div`
   position: relative;
 
   @media (max-width: 700px) {
-    padding: 0 2rem;
     width: 100%;
   }
 `
