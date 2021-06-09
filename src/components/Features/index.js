@@ -16,7 +16,7 @@ const Features = ({ titulo, texto, imagem, isFliped }) => (
       </Texting>
     </S.FeatureItem>
     <S.FeatureItem className="imagem">
-      <S.FeatureImg src={imagem} />
+      <S.FeatureImg src={imagem} alt={titulo} />
     </S.FeatureItem>
   </S.FeatureWrapper>
 )

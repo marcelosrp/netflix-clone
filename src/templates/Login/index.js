@@ -1,7 +1,9 @@
 import React from 'react'
+
 import BaseTemplate from '../Base'
 import Hero from '../../components/Hero'
 import LoginWrapper from '../../components/Login'
+import InfosLogin from '../../components/Login/infos'
 
 import Heading from '../../components/Typography/heading'
 
@@ -14,8 +16,8 @@ const LoginTemplate = () => (
         <Heading level="1" color="secondary" size="xlarge" textAlign="left">
           Entrar
         </Heading>
-
         <LoginWrapper />
+        <InfosLogin />
       </S.LoginBox>
     </Hero>
   </BaseTemplate>
