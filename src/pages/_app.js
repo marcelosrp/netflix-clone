@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Head from 'next/head'
 import { DefaultSeo } from 'next-seo'
-
 import NextNprogress from 'nextjs-progressbar'
+import { GlobalStorage } from '../context/globalContext'
 
 import SEO from '../../next-seo-config'
 
@@ -13,8 +13,14 @@ const App = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        <link rel="shortcut icon" href="/img/icon-512.png" />
-        <link rel="apple-touch-icon" href="/img/icon-512.png" />
+        <link
+          rel="shortcut icon"
+          href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico"
+        />
         <meta name="theme-color" content="#06092B" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
@@ -35,7 +41,9 @@ const App = ({ Component, pageProps }) => {
         height={3}
       />
 
-      <Component {...pageProps} />
+      <GlobalStorage>
+        <Component {...pageProps} />
+      </GlobalStorage>
     </>
   )
 }

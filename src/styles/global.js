@@ -13,6 +13,7 @@ const GlobalStyles = createGlobalStyle`
 
     --primary-color: #e50914;
     --preto: #000;
+    --preto2: #141414;
     --branco: #FFF;
     --cinza: #303030;
     --cinza2: #757575;

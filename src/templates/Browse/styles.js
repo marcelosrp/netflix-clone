@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const MainProfile = styled.main`
   align-items: center;
+  background-color: var(--preto2);
   display: flex;
   flex-direction: column;
   height: 100vh;
