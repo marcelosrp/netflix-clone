@@ -11,7 +11,7 @@ const theme = {
   sizes: {
     normal: '1.9rem',
     large: '2.5rem',
-    xlarge: '5rem'
+    xlarge: '4rem'
   }
 }
 

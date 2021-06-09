@@ -13,13 +13,13 @@ const Assinatura = () => (
       Pronto para assistir? Informe seu email para criar ou reiniciar sua
       assinaura.
     </Texting>
-    <Form>
+    <Form className="assinatura">
       <Input
         type="email"
         id="email"
         name="email"
         label="Email"
-        className="login"
+        className="assinatura"
       />
       <Button type="button">Vamos lá!</Button>
     </Form>

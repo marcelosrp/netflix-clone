@@ -6,7 +6,7 @@ export const FeatureWrapper = styled.section`
   display: flex;
   flex-direction: ${(props) => (props.isFliped ? 'row-reverse' : 'row')};
   justify-content: center;
-  padding: 5rem;
+  padding: 4.3rem 5rem;
   width: 100%;
 
   @media (max-width: 700px) {

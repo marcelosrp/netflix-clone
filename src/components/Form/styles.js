@@ -9,6 +9,14 @@ export const Form = styled.form`
   @media (max-width: 700px) {
     flex-direction: column;
   }
+
+  &.assinatura {
+    flex-direction: row;
+  }
+
+  &.login {
+    flex-direction: column;
+  }
 `
 
 export const InputWrapper = styled.div`
@@ -21,7 +29,6 @@ export const InputWrapper = styled.div`
 `
 
 export const InputLabel = styled.label`
-  color: var(--cinza);
   cursor: pointer;
   display: block;
   font-size: var(--small);
@@ -32,6 +39,14 @@ export const InputLabel = styled.label`
   transition: 0.2s ease all;
   top: 50%;
   transform: translateY(-45%);
+
+  &.assinatura {
+    color: var(--cinza);
+  }
+
+  &.login {
+    color: var(--cinza2);
+  }
 
   &:invalid {
     color: var(--cinza);
@@ -47,16 +62,25 @@ export const InputLabel = styled.label`
 
 export const Input = styled.input`
   border: none;
+  font-size: var(--small);
 
-  &.login {
+  &.assinatura {
+    background-color: var(--branco);
     color: var(--cinza);
-    font-size: var(--small);
     padding: 2rem 1rem;
     width: 45rem;
 
     @media (max-width: 700px) {
       width: 100%;
     }
+  }
+
+  &.login {
+    background-color: var(--cinza);
+    border-radius: 5px;
+    color: var(--branco);
+    padding: 2rem 1rem 10px 1rem;
+    width: 100%;
   }
 
   &:focus,

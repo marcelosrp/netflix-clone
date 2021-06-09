@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
     --small: 1.6rem;
     --normal: 1.9rem;
     --large: 2.5rem;
-    --xlarge: 5re;
+    --xlarge: 3rem;
 
     --primary-color: #e50914;
     --preto: #000;

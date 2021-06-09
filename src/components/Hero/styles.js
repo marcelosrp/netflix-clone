@@ -10,7 +10,7 @@ export const Hero = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 75vh;
+  min-height: 69.5vh;
   width: 100%;
 
   @media screen and (max-height: 750px) {
