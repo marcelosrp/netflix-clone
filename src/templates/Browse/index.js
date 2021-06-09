@@ -1,10 +1,17 @@
 import React from 'react'
 import Header from '../../components/Header'
-
 import Heading from '../../components/Typography/heading'
-import Texting from '../../components/Typography/texting'
+import Profile from '../../components/Profile'
+
+import profiles from '../../data/profiles.json'
 
 import * as S from './styles'
+
+function getProfiles() {
+  return profiles.map(({ name, avatar }) => (
+    <Profile key={name} name={name} avatar={avatar} />
+  ))
+}
 
 const BrowseTemplate = () => (
   <>
@@ -16,24 +23,8 @@ const BrowseTemplate = () => (
       </Heading>
 
       <S.ChoosePerfil>
-        <S.Profile>
-          <S.ButtonProfile>
-            <S.ProfileThumb className="perfil1"></S.ProfileThumb>
-            <Texting color="cinza2">Perfil 1</Texting>
-          </S.ButtonProfile>
-        </S.Profile>
-        <S.Profile>
-          <S.ButtonProfile>
-            <S.ProfileThumb className="perfil2"></S.ProfileThumb>
-            <Texting color="cinza2">Perfil 2</Texting>
-          </S.ButtonProfile>
-        </S.Profile>
-        <S.Profile>
-          <S.ButtonProfile>
-            <S.ProfileThumb className="infantil"></S.ProfileThumb>
-            <Texting color="cinza2">Infantil</Texting>
-          </S.ButtonProfile>
-        </S.Profile>
+        {getProfiles()}
+        <Profile name="Infantil" className="infantil" />
       </S.ChoosePerfil>
     </S.MainProfile>
   </>
