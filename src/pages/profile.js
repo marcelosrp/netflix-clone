@@ -1,7 +1,7 @@
 import React from 'react'
 import { NextSeo } from 'next-seo'
 
-import BrowseTemplate from '../templates/Browse'
+import ProfileTemplate from '../templates/Profile'
 
 const Browse = () => {
   return (
@@ -25,7 +25,7 @@ const Browse = () => {
           site_name: 'Netflix Clone'
         }}
       />
-      <BrowseTemplate />
+      <ProfileTemplate />
     </>
   )
 }
