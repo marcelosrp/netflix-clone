@@ -43,6 +43,10 @@ const GlobalStyles = createGlobalStyle`
   a {
     text-decoration: none;
   }
+
+  button {
+    border: none;
+  }
 `
 
 export default GlobalStyles
